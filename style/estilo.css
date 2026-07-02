@@ -49,7 +49,7 @@ form{
     color:whitesmoke;
 }
 
-#formulario{
+#container{
     margin:50px;
 }
 
@@ -61,4 +61,14 @@ input{
 
 label{
     margin-top: 10px;
+}
+
+.pesquisar{
+    background-color: #FFD60A;
+    border-radius: 30px;
+    border-style: none;
+    margin: 20px;
+    padding: 10px;
+
+
 }
