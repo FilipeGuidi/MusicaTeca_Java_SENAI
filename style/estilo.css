@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap');
 
 /*FONTES*/
-.space-grotesk-<uniquifier> {
+.space-grotesk {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
-.manrope-<uniquifier> {
+.manrope {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-weight: 400;
 }
 /*FIM FONTES*/
 
@@ -31,10 +32,11 @@ h1{
     justify-content: center;
     align-items: center;
     color: whitesmoke;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: medium 500;
     font-style:normal;
     font-size: 100px;
+    
 }
 
 html,body{
@@ -43,32 +45,55 @@ html,body{
     height:100%;
 }
 
-form{
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    color:whitesmoke;
-}
-
 #container{
     margin:50px;
+    font-family:'Manrope', sans-serif;
+    color:whitesmoke;
+
 }
 
 input{
     border-style:none;
-    border-radius: 20px;
+    border-radius: 50px;
     margin-top: 10px;
+    height:50px;
+    padding-left: 16px;
+    font-size: 16px;
 }
 
 label{
     margin-top: 10px;
 }
 
-.pesquisar{
+.pesquisar {
     background-color: #FFD60A;
-    border-radius: 30px;
-    border-style: none;
-    margin: 20px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.pesquisar:hover {
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25);
+    transform: translateY(2px);
+}
+
+.bi-search {
+    font-size: 20px;
+    color: #000;
+}
+
+footer{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Manrope', sans-serif;
 }
